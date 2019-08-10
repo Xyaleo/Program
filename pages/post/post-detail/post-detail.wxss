@@ -1,0 +1,25 @@
+
+.logo{
+ display:flex;                  
+ justify-content: center;      
+}
+.inlogo { 
+  width:336rpx;
+  height:100rpx;
+}
+
+.tit{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333;
+
+}
+.con{
+    margin-top: 20px;
+}
+
+.box{
+  margin-top: 10px;
+  margin-left: 15px;
+  border-top: 1px solid #ededed;
+}

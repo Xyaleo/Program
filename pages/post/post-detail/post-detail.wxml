@@ -1,0 +1,11 @@
+<view>
+  <view class="logo">
+    <image src="/image/logo.png" class="inlogo"></image>
+  </view>
+  <view class="box">
+  <text class="tit">{{posts.title}}</text>
+  </view>
+  <view class="con">
+<text >{{posts.content}}</text>
+</view>
+</view>

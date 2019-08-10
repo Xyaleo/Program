@@ -1,0 +1,22 @@
+<view>
+  <view class="logo">
+    <image src="/image/logo.png" class="inlogo"></image>
+  </view>
+
+  <swiper class="lunbo" indicator-dots="true" autoplay="true" interval="2000">
+    <swiper-item><image src="/image/pic1.jpg"></image></swiper-item>
+    <swiper-item><image src="/image/pic2.jpg"></image></swiper-item>
+  </swiper>
+  <block wx:for="{{posts}}" wx:for-item="item">
+  <view class="post-container" bindtap="detail" data-id="{{item.postId}}">
+      <text class="post-title">{{item.title}}</text>
+      <text class="post-content">{{item.content}}</text>
+      <view class="post-like">
+        <image class="post-like-image" src="/image/view.png"></image>
+        <text class="post-like-font">{{item.count}}</text>
+        <text class="post-date">{{item.name}}</text>
+        <text class="post-date">{{item.time}}</text>
+      </view>
+  </view>
+</block>
+</view>

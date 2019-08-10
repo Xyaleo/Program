@@ -1,0 +1,37 @@
+page{
+  background-color: #FF806E;
+}
+
+text{
+  color: #fff
+}
+
+.image{
+  width: 336px;
+  height: 100px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.tit{
+  margin-top: 30px;
+}
+.welcome1{
+  font-size: 32px;
+  font-weight: bold;
+}
+.moto-container{
+  margin-top: 150px;
+  border: 2px solid #fff;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  text-align: center;
+}
+.moto{
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 80rpx;
+  color: #fff;
+}

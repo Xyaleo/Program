@@ -1,0 +1,11 @@
+<view class="container">
+ <view class="tit">
+   <text class="welcome1">Welcome</text>
+   <text class="welcome2">to</text>
+   <text class="welcome1">MyBlog</text>
+ </view>
+
+ <view class="moto-container">
+   <text class="moto" bindtap="go">开启博客</text>
+ </view>
+</view>
