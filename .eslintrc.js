@@ -2,38 +2,19 @@ module.exports = {
     extends: [
         'eslint-config-alloy',
     ],
-    "env": {
-        "browser": true,
-        "es6": true
+    globals: {
+        // 这里填入你的项目需要的全局变量
+        // 这里值为 false 表示这个全局变量不允许被重新赋值，比如：
+        //
+        wx: false,
+        App: false,
+        Page: false,
+        getApp: false,
+        Component: false,
+        getCurrentPages: false
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:vue/essential"
-    ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-        jQuery: false,
-        $: false
-    },
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "vue"
-    ],
-    "rules": {
-        'indent': [
-            'error',
-            2,
-            {
-                SwitchCase: 1,
-                flatTernaryExpressions: true
-            }
-        ]
+    rules: {
+        // 分号
+        "semi": ['error', 'never'],
     }
-}
-
-
 };
